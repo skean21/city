@@ -13,7 +13,7 @@ def get_neighbors(point):
 	for offset in stencil:
 		x = point[0] + offset[0]
 		if x >= 0 and x < size:
-			y = point[0] + offset[0]
+			y = point[1] + offset[1]
 			if y >= 0 and y < size:
 				result |= {(x, y)}
 	return result
@@ -26,7 +26,10 @@ for step in range(time_limit):
 	new_city = copy.deepcopy(city)
 	for x in range(size):
 		for y in range(size):
-			new_city[x][y] = city[x][y] # (change the code here)
+			new_city[x][y] = city[x][y] # the default is that cells don't change
+			# BEGIN CUSTOM CODE
+			# (Add code here to implement the simulation rules.)
+			# END CUSTOM CODE
 	print('Step {step}:'.format(step = step))
 	for y in reversed(range(size)):
 		print('  ', end = '')
