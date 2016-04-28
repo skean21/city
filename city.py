@@ -4,7 +4,7 @@ from __future__ import print_function
 import copy
 import random
 
-time_limit = 25 # the number of time steps to simulate
+time_limit = 20 # the number of time steps to simulate
 size = 9 # the width and height of the simulation area in blocks
 stencil = {(u, v) for u in range(-1, 2) for v in range(-1, 2) if (u, v) != (0, 0)}
 
