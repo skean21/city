@@ -28,7 +28,7 @@ for step in range(time_limit):
 		for y in range(size):
 			new_city[x][y] = city[x][y] # the default is that cells don't change
 			# BEGIN CUSTOM CODE
-			# (Add code here to implement the simulation rules.)
+			# As much as I struggled, I really enjoyed taking this course this semester. Thank you for everything that you have done to help me learn about coding. 
 			# END CUSTOM CODE
 	print('Step {step}:'.format(step = step))
 	for y in reversed(range(size)):
